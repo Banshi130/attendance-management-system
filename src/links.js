@@ -1,0 +1,1 @@
+export const serverURL = 'https://589-review-develop-3zknud.review.reliab.tech';

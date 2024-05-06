@@ -1,0 +1,52 @@
+.menuFlex {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: -8px;
+}
+.sideMenu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--side-menu-bg);
+    padding: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.sideMenu > div {
+    margin-top: 5px;
+}
+.siteName, .link {
+    color: var(--light-text);
+    text-decoration: none;
+    display: block;
+}
+.siteName {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.links > * {
+    margin: 10px 0;
+}
+.link {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.link > i {
+    margin-right: 7px;
+}
+.link:hover {
+    background-color: var(--side-menu-hover);
+}
+.logOut {
+    bottom: 10px;
+    margin-bottom: 30px;
+    position: absolute;
+}
+.child {
+    margin-left: 300px;
+    flex-grow: 1;
+}

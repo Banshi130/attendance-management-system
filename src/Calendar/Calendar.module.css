@@ -1,0 +1,101 @@
+:root {
+    --table-border: #C6C6C6;
+    --head-color: #686868;
+    --task-color: #D2E3FF;
+    --event-counter-color: #686868;
+    --time-color: #848484;
+}
+.calendar {
+    padding: 15px 60px 40px;
+}
+.calendar > *:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calendar > *:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.date {
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.dayCalendar {
+    /* border-collapse: collapse; */
+    width: 100%;
+    border-spacing: 0;
+}
+.dayCalendar tr th, .dayCalendar tr td {
+    border-right: 1px solid var(--table-border);
+    border-bottom: 1px solid var(--table-border);
+}
+.dayCalendar tr th:first-child, .dayCalendar tr:first-child td:first-child {
+    border-left: 1px solid var(--table-border);
+}
+.dayCalendar tr th {
+    border-top: 1px solid var(--table-border);
+}
+.dayCalendar tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+.dayCalendar thead {
+    height: 70px;
+}
+.eventCounter {
+    font-size: 14px;
+    color: var(--event-counter-color);
+}
+.time, .time table {
+    width: 80px;
+    text-align: center;
+    color: var(--time-color);
+}
+.time {
+    border-collapse: collapse;
+}
+.time tr td {
+    border: none !important;
+}
+.dayCalendar .tableDate {
+    /* margin-top: 36px;
+    margin-bottom: 54px; */
+    padding-left: 8px;
+    color: var(--head-color);
+    font-weight: 500;
+    text-align: left;
+}
+.dayCalendar th {
+    font-weight: 400;
+}
+.dayCalendar tbody > tr:not(:first-child), .time tr {
+    height: 66px;
+}
+.day {
+    display: inline-block;
+    width: 210px;
+}
+.day > span {
+    color: var(--day-color);
+}
+.event {
+    padding-left: 25px;
+    background-color: var(--task-color);
+}

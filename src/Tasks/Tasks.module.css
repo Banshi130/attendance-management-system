@@ -1,0 +1,208 @@
+:root {
+    --task-list-bg: #EAEFF7;
+    --task-bg: #FFFFFF;
+    --date-color: #686868;
+    --day-color: #000000;
+    --message-border: #D2E3FF;
+}
+.blueBtn {
+    padding: 10.5px 30px;
+    background-color: var(--dark-blue);
+    color: var(--light-text);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.tasks h1 {
+    text-align: center;
+}
+.taskList {
+    margin: 0 168px;
+    padding: 27px 76px 26px 72px;
+    background-color: var(--task-list-bg);
+    border-radius: 30px;
+}
+.taskList > *:nth-child(2) > *:not(:last-child) {
+    margin-bottom: 4px;
+}
+.date {
+    margin-top: 36px;
+    margin-bottom: 54px;
+    color: var(--date-color);
+    font-weight: 500;
+}
+.day {
+    display: inline-block;
+    width: 210px;
+}
+.day > span {
+    color: var(--day-color);
+}
+.arrows {
+    margin-left: 21px;
+}
+.arrowBtn {
+    margin-right: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    color: var(--arrow-color);
+}
+.createTask {
+    text-align: center;
+    margin-top: 192px;
+}
+.task {
+    position: relative;
+    height: 92px;
+    box-sizing: border-box;
+    padding: 14px 48px;
+    border-radius: 8px;
+    background-color: var(--task-bg);
+}
+.taskName {
+    font-weight: 500;
+}
+.taskDescription {
+    font-size: 14px;
+}
+.taskCompletedBtn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+    border: 0.3px var(--button-border) solid;
+    border-radius: 50%; 
+}
+.taskCompleted {
+    width: 12px;
+    height: 12px;
+    background-color: var(--dark-blue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; 
+}
+.taskMenuContainer {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.taskMenuBtn {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+.taskMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: max-content;
+    z-index: 1;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 24px 0px var(--light-shadow-color),
+                0px 0px 2px 0px var(--light-shadow-color);
+    background-color: var(--task-bg);
+}
+.taskMenu > *:hover {
+    color: var(--dark-blue)
+}
+.taskMenu > div:not(:last-child) {
+    margin-bottom: 18px;
+}
+.taskMenu i {
+    margin-right: 4px;
+}
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 46px;
+    box-shadow: 0px 4px 4px 0px var(--dark-shadow-color);
+    background-color: var(--task-bg);
+    border: 2px var(--message-border) solid;
+}
+.closeBtn {
+    position: absolute;
+    font-size: 22px;
+    cursor: pointer;
+}
+.createFormBox {
+    padding: 13px 39px;
+    text-align: center;
+}
+.createFormBox .closeBtn {
+    top: 14px;
+    right: 29px;
+}
+.createFormBox p {
+    margin: auto;
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+.createForm input {
+    display: block;
+    width: 400px;
+    border: none;
+}
+.createForm .nameInput {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.createForm .descriptionInput {
+    font-size: 13px;
+    margin-bottom: 76px;
+}
+.createFormBox > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dateInput {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.editFormBox {
+    padding: 24px 28px;
+    text-align: center;
+}
+.editFormBox p {
+    margin: auto;
+    margin-bottom: 22px;
+    font-size: 20px;
+}
+.editForm input {
+    display: block;
+    width: 400px;
+    border: none;
+}
+.editForm .nameInput {
+    font-size: 16px;
+    margin-bottom: 21px;
+}
+.editForm .descriptionInput {
+    font-size: 13px;
+    margin-bottom: 43px;
+}
+.editFormBox .closeBtn {
+    /* top: 31px; */
+    right: 32px;
+}
+.deleteMsg {
+    padding: 23px 16px 49px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.deleteMsg .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 133px;
+    margin-top: 51px;
+}

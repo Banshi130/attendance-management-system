@@ -1,0 +1,144 @@
+:root {
+    --instruction-bg: #fff;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+.profile > div {
+    padding-left: 66px;
+    padding-right: 92px;
+}
+.userInfoContainer {
+    height: 204px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px var(--light-gray-border) solid;
+}
+.avatar {
+    /* position: relative; */
+    height: 100px;
+    width: 100px;
+    margin-right: 22px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.avatar img {
+    width: 100px;
+}
+.userInfo {
+    width: 100%;
+}
+.nameContainer {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.name {
+    font-size: 30px;
+    font-weight: 500;
+}
+.role {
+    padding: 3px 18px;
+    margin-left: 15px;
+    border-radius: 6px;
+    background-color: var(--light-blue);
+}
+.editBtn {
+    padding: 13px;
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-left: auto;
+}
+.icon {
+    margin-right: 13px;
+}
+.contactData > *:not(:last-child) {
+    margin-bottom: 5px;
+}
+.copiedMsg {
+    visibility: hidden;
+    margin-left: 18px;
+    padding: 1px 4px 3px;
+    border-radius: 6px;
+    background-color: var(--message-color);
+}
+.heading {
+    font-weight: 500;
+    font-size: 25px;
+}
+.links {
+    margin-top: 8px;
+}
+.links a {
+    display: block;
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+.internshipStages {
+    /* margin-top: 148px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.internshipStages .heading {
+    margin-bottom: 37px;
+}
+.internshipStagesList {
+    display: flex;
+    gap: 28px;
+}
+.internshipStagesList div {
+    height: 306px;
+    padding: calc(21px - 16px) 59px;
+    background-color: var(--light-blue);
+    border-radius: 24px;
+    text-align: center;
+    flex-basis: 100%;
+}
+.stageName {
+    font-weight: 400;
+    font-size: 22px;
+}
+.stageDescription {
+    font-weight: 300;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.instruction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 28px 13px 20px;
+    background-color: var(--instruction-bg);
+    border-radius: 46px;
+}
+.instruction h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0;
+}
+.instruction li {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 22px;
+    cursor: pointer;
+}

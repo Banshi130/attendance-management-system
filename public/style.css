@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --main-text: #000;
+    --border-color: #d3d3d3; 
+    --primary-blue: #3274f9;
+    --blue-btn-bg: #48B9F9;
+    --dark-blue: #1A2CF8;
+    --light-gray-btn: #EFF0F5;
+    --light-blue: #D2E3FF;
+    --light-text: #fff;
+    --placeholder: #e6e6e6;
+    --input-color: #231F20;
+    --dark-border: #000;
+    --log-in-btn: #fff;
+    --side-menu-bg: #191919;
+    --side-menu-hover: #343434;
+    --light-gray-border: #DADADA;
+    --arrow-color: #231F20;
+    --message-color: #F5F5F5;
+    --button-border: #191919;
+    --light-shadow-color: #00000014;
+    --dark-shadow-color: #00000040;
+}
+body, input, button {
+    font-family: "Inter", Helvetica, Arial, sans-serif;    
+}
+.blueBtn {
+    padding: 10.5px 30px;
+    background-color: var(--dark-blue);
+    color: var(--light-text);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.grayBtn {
+    padding: 10.5px 30px;
+    background-color: var(--light-gray-btn);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.arrowBtn {
+    margin-right: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    color: var(--arrow-color);
+}

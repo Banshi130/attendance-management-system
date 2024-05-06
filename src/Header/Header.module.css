@@ -1,0 +1,20 @@
+:root {
+    --header-border: #787878;
+    --header-link: #353535;
+    --header-active-link: #656262;
+}
+.header {
+    border-bottom: 1px var(--header-border) solid;
+    padding: 40px 57px;
+}
+.header > * {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--header-link);
+}
+.header > *:last-child {
+    color: var(--header-active-link);
+}
+.header > *:not(:last-child)::after {
+    content: ' > ';
+}
