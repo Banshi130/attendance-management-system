@@ -1,4 +1,4 @@
-import SignUp from '../SignUp/SignUp';
+
 import styles from './App.module.css';
 import logInImage from '../images/dude.svg';
 import { useNavigate } from 'react-router-dom';
